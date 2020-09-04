@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <me.bytebeats.gtv.GradientTextView
+        android:id="@+id/force_gradient"
+        app:gtv_forceGradient="true"
+        app:gtv_startColor="@color/yellow_ffe"
+        app:gtv_endColor="@color/yellow_ce"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="force gradient" />
+
+    <me.bytebeats.gtv.GradientTextView
+        android:id="@+id/selected"
+        app:gtv_forceGradient="false"
+        app:gtv_startColor="@color/yellow_ffe"
+        app:gtv_endColor="@color/yellow_ce"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Selected" />
+
+    <me.bytebeats.gtv.GradientTextView
+        android:id="@+id/unselected"
+        app:gtv_forceGradient="false"
+        app:gtv_startColor="@color/yellow_ffe"
+        app:gtv_endColor="@color/yellow_ce"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="No" />
+
+
+</LinearLayout>
